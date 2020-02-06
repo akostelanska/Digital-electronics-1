@@ -1,19 +1,19 @@
 # Digital-electronics-1
 
 # Nadpis 1
-## Nadpis 2
-### Nadpis 3
+## Podnadpis 2
+### Popodnadpis 3
 
-**tučné**  
-*kurzíva*  
-~~prečiarknuté~~  
+**chlelem**  
+*chlelelem*  
+~~chlelelelem~~  
 
 ## Zoznam
 
 1. prvá položka
  * *prvá položka*
 2. druhá položka
-3. tretia položka
+3. tretia ponožka
 
 
 # Tabuľka
@@ -22,3 +22,6 @@
 | :-: | :-- |
 | `prvý riadok` | info prvý riadok |
 | `druhý riadok` | info druhý riadok |
+
+
+## Hey B0ss
