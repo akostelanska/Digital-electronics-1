@@ -24,4 +24,3 @@
 | `druhý riadok` | info druhý riadok |
 
 
-## Hey B0ss
