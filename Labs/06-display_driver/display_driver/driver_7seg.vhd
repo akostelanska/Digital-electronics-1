@@ -1,3 +1,5 @@
+library ieee;
+use ieee.std_logic_1164.all;
 
 ------------------------------------------------------------------------
 -- Entity declaration for display driver
@@ -43,7 +45,7 @@ begin
     --------------------------------------------------------------------
     -- Sub-block of mux_7seg entity
     --- WRITE YOUR CODE HERE
-    MUX_7SEG : entity work.mux_7seg
+    MUX_7SEG : entity work.design
     port map (
         clk_i    => clk_i,
         srst_n_i => srst_n_i,
