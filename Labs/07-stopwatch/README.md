@@ -28,8 +28,7 @@ and outputs:
 
 ![Screenshot of Simulation](simulacia.png)
 
-For simulation files see: https://www.edaplayground.com/x/4ZsU
-
+For simulation files see result folder or simulation in [EDAPlayground] https://www.edaplayground.com/x/4ZsU
 
 ##  Top level
 
