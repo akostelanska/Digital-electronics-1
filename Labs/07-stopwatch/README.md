@@ -32,5 +32,5 @@ For simulation files see `result` folder or `simulation` in [EDA Playground](htt
 
 ##  Top level
 
-![Block diagram of used modules](diagram.png)
+![Block diagram of used modules](diagram.PNG)
 
