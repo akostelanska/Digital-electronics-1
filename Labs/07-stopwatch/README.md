@@ -26,7 +26,7 @@ and outputs:
 
 ##  Stopwatch simulation
 
-![Screenshot of Simulation](simulacia.png)
+![Screenshot of Simulation](simulacia.PNG)
 
 For simulation files see result folder or simulation in [EDA Playground](https://www.edaplayground.com/x/4ZsU)
 
