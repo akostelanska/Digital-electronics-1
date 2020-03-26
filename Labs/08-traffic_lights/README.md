@@ -34,3 +34,4 @@ For simulation files see `result_traffic_lights` folder or simulation in [EDAPla
 
 ![sim_v2](simulacia_traffic_lights_v2.PNG)
 ## 5 Top level
+![top_modul](top_modul.JPG)
