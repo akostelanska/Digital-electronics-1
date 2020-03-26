@@ -25,9 +25,12 @@ Read the article [Implementing a Finite State Machine in VHDL](https://www.allab
 
 
 ## 3 Traffic light controller
-For simulation files see '''result_traffic_lights''' folder or simulation in [EDAPlaygrounds](https://www.edaplayground.com/x/3mqz)
+![schema_proces](Snímka1.JPG)
+
+For simulation files see `result_traffic_lights` folder or simulation in [EDAPlaygrounds](https://www.edaplayground.com/x/3mqz)
 
 ## 4 Traffic light simulation
+![sim_v1](simulacia_traffic_lights.PNG)
 
-
+![sim_v2](simulacia_traffic_lights_v2.PNG)
 ## 5 Top level
