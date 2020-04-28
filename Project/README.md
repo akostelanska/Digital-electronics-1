@@ -29,5 +29,5 @@ ALU jednotka vykonáva základné logické, aritmetické operácie a iné operá
 
 
 ## Použité zdroje
-https://www.xilinx.com/support/documentation/boards_and_kits/ug501.pdf
+https://www.xilinx.com/support/documentation/boards_and_kits/ug501.pdf <br>
 https://en.wikipedia.org/wiki/Arithmetic_logic_unit#Functions
