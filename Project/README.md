@@ -1,12 +1,12 @@
-#ALU (Arithmetic Logic Unit) jednotka
+# ALU (Arithmetic Logic Unit) jednotka
 
-##Zadanie projektu
+## Zadanie projektu
 Vlastní ALU (Arithmetic Logic Unit) jednotka. Možnost výběru instrukcí a vstupních hodnot za chodu aplikace. Výstup na 7segmentovém displeji.
 
-##Základné informácie
+## Základné informácie
 ALU jednotka vykonáva základné logické, aritmetické operácie a iné operácie s bitmi.
 
-##Funkcie
+## Funkcie
 *A a B považujeme za vstupy, Y za výstup*
 <table>
 <tr><td><b>Riadiací signál</b></td><td><b>Funkcia</b></td><td><b>Popis</b></td></tr>
@@ -20,13 +20,13 @@ ALU jednotka vykonáva základné logické, aritmetické operácie a iné operá
 <tr><td> 111 </td><td> Y = A xor B </td><td> Exkluzivní logický súčet </td></tr>
 </table>
 
-##Zapojenie
+## Zapojenie
 
 
-###Jednotlivé funkčnú jednotky
+### Jednotlivé funkčnú jednotky
 
 
 
 
-##Použité zdroje
+## Použité zdroje
 https://en.wikipedia.org/wiki/Arithmetic_logic_unit#Functions
