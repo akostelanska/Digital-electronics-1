@@ -29,45 +29,37 @@ ALU jednotka vykonáva základné logické, aritmetické operácie a iné operá
 </table>
 
 ## Zapojenie
-
+![celkové zapojenie](../../Images/schema.jpg)
 
 
 ### Jednotlivé funkčnú jednotky
 
 #### Súčet
-
+![súčet]
 #### Súčet s prenosom
-
+![súčet s carry]
 #### Rozdiel
-
+![rozdiel](../../Images/odcitanie.PNG)
 #### Rozdiel s prenosom
-
+![rozdiel s prenosom](../../Images/odcitanie.PNG)
 #### Súčin
-
+![rozdiel](../../Images/odcitanie+carry.PNG)
 #### Inkrementácia
-
+![inkrement](../../Images/increment.PNG)
 #### Dekrementácia
-
+![dekrement](../../Images/dekrement.PNG)
 #### Logický súčin
-
+![and](../../Images/and.PNG)
 #### Logický súčet
-
+![or](../../Images/or.PNG)
 #### Exkluzivní logický súčet
-
+![xor](../../Images/xor.PNG)
 #### Logická negácia
-
-#### Rotácia doprava
-
-#### Rotácia doprava s prenosom
-
-#### Rotácia doľava
-
-#### Rotácia doľava s prenosom
-
-#### Prehodenie bitov
-
+![negácia](../../Images/negacia.PNG)
 
 ## Simulácia
+Simulácia pre sčítačku
+![simulacia](../../Images/ADDER_simulation.PNG)
 
 ## Použité zdroje
 https://www.xilinx.com/support/documentation/boards_and_kits/ug501.pdf <br>
