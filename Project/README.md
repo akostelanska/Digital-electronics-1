@@ -29,7 +29,7 @@ ALU jednotka vykonáva základné logické, aritmetické operácie a iné operá
 </table>
 
 ## Zapojenie
-![celkové zapojenie](../../Images/schema.jpg)
+![celkové zapojenie](../../Project/Images/schema.jpg)
 
 
 ### Jednotlivé funkčnú jednotky
@@ -39,27 +39,27 @@ ALU jednotka vykonáva základné logické, aritmetické operácie a iné operá
 #### Súčet s prenosom
 ![súčet s carry]
 #### Rozdiel
-![rozdiel](../../Images/odcitanie.PNG)
+![rozdiel](../../Project/Images/odcitanie.PNG)
 #### Rozdiel s prenosom
-![rozdiel s prenosom](../../Images/odcitanie.PNG)
+![rozdiel s prenosom](../../Project/Images/odcitanie.PNG)
 #### Súčin
-![rozdiel](../../Images/odcitanie+carry.PNG)
+![rozdiel](../../Project/Images/odcitanie+carry.PNG)
 #### Inkrementácia
-![inkrement](../../Images/increment.PNG)
+![inkrement](../../Project/Images/increment.PNG)
 #### Dekrementácia
-![dekrement](../../Images/dekrement.PNG)
+![dekrement](../../Project/Images/dekrement.PNG)
 #### Logický súčin
-![and](../../Images/and.PNG)
+![and](../../Project/Images/and.PNG)
 #### Logický súčet
-![or](../../Images/or.PNG)
+![or](../../Project/Images/or.PNG)
 #### Exkluzivní logický súčet
-![xor](../../Images/xor.PNG)
+![xor](../../Project/Images/xor.PNG)
 #### Logická negácia
-![negácia](../../Images/negacia.PNG)
+![negácia](../../Project/Images/negacia.PNG)
 
 ## Simulácia
 Simulácia pre sčítačku
-![simulacia](../../Images/ADDER_simulation.PNG)
+![simulacia](../../Project/Images/ADDER_simulation.PNG)
 
 ## Použité zdroje
 https://www.xilinx.com/support/documentation/boards_and_kits/ug501.pdf <br>
