@@ -29,37 +29,39 @@ ALU jednotka vykonáva základné logické, aritmetické operácie a iné operá
 </table>
 
 ## Zapojenie
-![celkové zapojenie](../../Project/Images/schema.jpg)
-
+### Orientačná schéma pre TOP
+![top](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/TOP_level.PNG)
+### Celkové zapojenie ALU jednotky
+![celkové zapojenie](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/sch%C3%A9ma.jpg)
 
 ### Jednotlivé funkčnú jednotky
 
 #### Súčet
-![súčet]
+![súčet](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/scitanie.PNG)
 #### Súčet s prenosom
-![súčet s carry]
+![súčet s carry](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/scitanie%2Bcarry.PNG)
 #### Rozdiel
-![rozdiel](../../Project/Images/odcitanie.PNG)
+![rozdiel](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/odcitanie.PNG)
 #### Rozdiel s prenosom
-![rozdiel s prenosom](../../Project/Images/odcitanie.PNG)
+![rozdiel s prenosom](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/odcitanie%2Bcarry.PNG)
 #### Súčin
-![rozdiel](../../Project/Images/odcitanie+carry.PNG)
+![násobenie](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/nasobenie.PNG)
 #### Inkrementácia
-![inkrement](../../Project/Images/increment.PNG)
+![inkrement](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/increment.PNG)
 #### Dekrementácia
-![dekrement](../../Project/Images/dekrement.PNG)
+![dekrement](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/dekrement.PNG)
 #### Logický súčin
-![and](../../Project/Images/and.PNG)
+![and](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/and.PNG)
 #### Logický súčet
-![or](../../Project/Images/or.PNG)
+![or](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/or.PNG)
 #### Exkluzivní logický súčet
-![xor](../../Project/Images/xor.PNG)
+![xor](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/xor.PNG)
 #### Logická negácia
-![negácia](../../Project/Images/negacia.PNG)
+![negácia](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/negacia.PNG)
 
 ## Simulácia
-Simulácia pre sčítačku
-![simulacia](../../Project/Images/ADDER_simulation.PNG)
+Simulácia pre sčítačku <br>
+![simulacia](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/ADDER_simulation.PNG)
 
 ## Použité zdroje
 https://www.xilinx.com/support/documentation/boards_and_kits/ug501.pdf <br>
