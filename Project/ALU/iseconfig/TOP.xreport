@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-30T17:38:08</DateModified>
+  <DateModified>2020-04-30T18:15:58</DateModified>
   <ModuleName>TOP</ModuleName>
-  <SummaryTimeStamp>2020-04-30T16:01:46</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Betka/Downloads/myairbridge-DagQsSHC2/KostelanskaMichalek/ALU/iseconfig/TOP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Betka/Downloads/myairbridge-DagQsSHC2/KostelanskaMichalek/ALU\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2020-04-30T18:13:50</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Betka/Desktop/KostelanskaMichalek/ALU/iseconfig/TOP.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Betka/Desktop/KostelanskaMichalek/ALU\</ImplementationReportsDirectory>
   <DateInitialized>2020-04-28T21:28:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

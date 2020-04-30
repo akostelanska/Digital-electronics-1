@@ -72,37 +72,53 @@ architecture Behavioral of TOP is
 	 signal resultCarryMultiplication : std_logic;
 	 
 	 -- Add        0x0
-    signal resultAdd : std_logic_vector(4-1 downto 0); 
-	 -- Substract        0x1
+    signal resultAdd : std_logic_vector(4-1 downto 0);
+	 
+	 -- Adder with carry    0x1    
+    signal resultAddCarry : std_logic_vector(4-1 downto 0);
+	 
+	 -- Substract        0x2
     signal resultSubstract : std_logic_vector(4-1 downto 0);  
-	 -- Increment       0x2
-    signal resultIncrement : std_logic_vector(4-1 downto 0);
-	 -- Decrement        0x3	 
-    signal resultDecrement : std_logic_vector(4-1 downto 0);
-	 -- Adder with carry    0x4    
-    signal resultAddCarry : std_logic_vector(4-1 downto 0);  
-	 -- Substract with carry   0x5
+	 
+	 -- Substract with carry   0x3
     signal resultSubstractCarry : std_logic_vector(4-1 downto 0); 
-	 -- Disjunction       0x6
-    signal resultDisjunction : std_logic_vector(4-1 downto 0);  
-	 -- Conjunction      0x7	 
-    signal resultConjunction : std_logic_vector(4-1 downto 0);    
-	 -- XOR      0x8
-    signal resultExDisjunction : std_logic_vector(4-1 downto 0);
-	 -- Negation       0x9    
-    signal resultNegation : std_logic_vector(4-1 downto 0); 
-	 -- Rotate right       0xA	 
-    signal resultRotateRight : std_logic_vector(4-1 downto 0); 
-	 -- Rotate left      0xB    
-    signal resultRotateLeft : std_logic_vector(4-1 downto 0); 
-	 -- Rotate right with carry   0xC    
-    signal resultRotateRightCarry : std_logic_vector(4-1 downto 0);
-    -- Rotate left with carry   0xD
-    signal resultRotateLefttCarry : std_logic_vector(4-1 downto 0);  
-	 -- Bitswap  0xE
-    signal resultBitSwap : std_logic_vector(4-1 downto 0); 
-	 -- Multiplication       0xF
+	 
+	  -- Multiplication       0x4
     signal resultMultiplication : std_logic_vector(4-1 downto 0); 
+	 
+	 -- Increment 0x5
+    signal resultIncrement : std_logic_vector(4-1 downto 0);
+	 
+	 -- Decrement        0x6	 
+    signal resultDecrement : std_logic_vector(4-1 downto 0);
+	  
+	  -- Conjunction      0x7	 
+    signal resultConjunction : std_logic_vector(4-1 downto 0);  
+	 
+	 -- Disjunction       0x8
+    signal resultDisjunction : std_logic_vector(4-1 downto 0);  
+	   
+	 -- XOR      0x9
+    signal resultExDisjunction : std_logic_vector(4-1 downto 0);
+	 
+	 -- Negation       0xA    
+    signal resultNegation : std_logic_vector(4-1 downto 0); 
+	 
+	 -- Rotate right       0xB	 
+    signal resultRotateRight : std_logic_vector(4-1 downto 0); 
+	 
+	  -- Rotate right with carry   0xC    
+    signal resultRotateRightCarry : std_logic_vector(4-1 downto 0);
+	 
+	 -- Rotate left      0xD    
+    signal resultRotateLeft : std_logic_vector(4-1 downto 0); 
+	 
+    -- Rotate left with carry   0xE
+    signal resultRotateLefttCarry : std_logic_vector(4-1 downto 0);  
+	 
+	 -- Bitswap  0xF
+    signal resultBitSwap : std_logic_vector(4-1 downto 0); 
+	
     
 begin
     -- LED A
@@ -151,7 +167,19 @@ begin
         Y_o => resultAdd,
         C_o => resultCarryAdd
     );
-    
+	 
+    -- Adder with carry
+    ProcessAdderCarry: entity work.adderCarry
+    port map (
+        -- Inputs
+        A_i => inputA_i,
+        B_i => inputB_i,
+        C_i => carry_i,
+        -- Outputs
+        Y_o => resultAddCarry,
+        C_o => resultCarryAddCarry
+    );
+	 
     -- Substract
     ProcessSubstract: entity work.substraction
     port map (
@@ -163,7 +191,30 @@ begin
         Y_o => resultSubstract,
         C_o => resultCarrySubstract
     );
+	 
+    -- Substraction with carry
+    ProcessSubstractionCarry: entity work.substractionCarry
+    port map (
+        -- Inputs
+        A_i => inputA_i,
+        B_i => inputB_i,
+        C_i => carry_i,
+        -- Outputs
+        Y_o => resultSubstractCarry,
+        C_o => resultCarrySubtractCarry
+    );
     
+	 -- Multiply
+    ProcessMultiplication: entity work.multiplication
+    port map (
+       -- Inputs
+       A_i => inputA_i,
+       B_i => inputB_i,
+       -- Output
+       Y_o => resultMultiplication,
+       C_o => resultCarryMultiplication
+    );
+	 
     -- Increment
     ProcessIncrement: entity work.increment
     port map (
@@ -186,30 +237,17 @@ begin
         C_o => resultCarryDecrement
     );
     
-    -- Adder with carry
-    ProcessAdderCarry: entity work.adderCarry
+    
+     -- Conjunction
+   ProcessConjunction: entity work.conjunction
     port map (
-        -- Inputs
+        -- Inpputs
         A_i => inputA_i,
         B_i => inputB_i,
-        C_i => carry_i,
         -- Outputs
-        Y_o => resultAddCarry,
-        C_o => resultCarryAddCarry
+        Y_o => resultConjunction
     );
-    
-    -- Substraction with carry
-    ProcessSubstractionCarry: entity work.substractionCarry
-    port map (
-        -- Inputs
-        A_i => inputA_i,
-        B_i => inputB_i,
-        C_i => carry_i,
-        -- Outputs
-        Y_o => resultSubstractCarry,
-        C_o => resultCarrySubtractCarry
-    );
-    
+	 
     -- Disjuncion - OR
     ProcessDisjunction: entity work.disjunction
     port map (
@@ -219,18 +257,7 @@ begin
         -- Output
         Y_o => resultDisjunction
     );
-        
-    
-    -- Conjunction
-   ProcessConjunction: entity work.conjunction
-    port map (
-        -- Inpputs
-        A_i => inputA_i,
-        B_i => inputB_i,
-        -- Outputs
-        Y_o => resultConjunction
-    );
-    
+   
     -- EXdisjunction - XOR
     ProcessExDisjunction: entity work.exDisjunction
     port map (
@@ -260,17 +287,7 @@ begin
        C_o => resultCarryRotateRight
     );
     
-    -- Rotate Left
-    ProcessRotateLeft: entity work.rotateLeft
-    port map (
-       -- Inputs
-       A_i => inputA_i,
-       -- Outputs
-       Y_o => resultRotateLeft,
-       C_o => resultCarryRotateLeft
-    );
-    
-    -- Rotate right - carry
+	    -- Rotate right - carry
     ProcessRotateRigtCarry: entity work.rotateRightCarry
     port map (
        -- Inputs
@@ -280,7 +297,17 @@ begin
        Y_o => resultRotateRightCarry,
        C_o => resultCarryRotateRightCarry
     );
-    
+	 
+    -- Rotate Left
+    ProcessRotateLeft: entity work.rotateLeft
+    port map (
+       -- Inputs
+       A_i => inputA_i,
+       -- Outputs
+       Y_o => resultRotateLeft,
+       C_o => resultCarryRotateLeft
+    );
+       
     -- Rotate left - carry
     ProcessRotateLeftCarry: entity work.rotateLeftCarry
     port map (
@@ -301,50 +328,42 @@ begin
        Y_o => resultBitSwap
     );   
     
-    -- Multiply
-    ProcessMultiplication: entity work.multiplication
-    port map (
-       -- Inputs
-       A_i => inputA_i,
-       B_i => inputB_i,
-       -- Output
-       Y_o => resultMultiplication,
-       C_o => resultCarryMultiplication
-    );
+    
     
     -- choose result
     with control_i select
-        resultALU <= resultAdd when x"0",
-                      resultSubstract when x"1",
-                      resultIncrement when x"2",
-                      resultDecrement when x"3",
-                      resultAddCarry when x"4",
-                      resultSubstractCarry when x"5",
-                      resultDisjunction when x"6",
+        resultALU <=  resultAdd when x"0",
+							 resultAddCarry when x"1",
+                      resultSubstract when x"2",
+							 resultSubstractCarry when x"3",
+							 resultMultiplication when x"4",
+                      resultIncrement when x"5",
+                      resultDecrement when x"6",
                       resultConjunction when x"7",
-                      resultExDisjunction when x"8",
-                      resultNegation when x"9",
-                      resultRotateRight when x"A",
-                      resultRotateLeft when x"B",
-                      resultRotateRightCarry when x"C",
-                      resultRotateLefttCarry when x"D",
-                      resultBitSwap when x"E",
-                      resultMultiplication when x"F",
+                      resultDisjunction when x"8",
+                      resultExDisjunction when x"9",
+                      resultNegation when x"A",
+                      resultRotateRight when x"B",
+							 resultRotateRightCarry when x"C",
+                      resultRotateLeft when x"D",
+                      resultRotateLefttCarry when x"E",
+                      resultBitSwap when x"F",
+                      
                       x"0" when others;
      
      -- choose carry
      with control_i select
          resultCarry <= resultCarryAdd when x"0",
-                     resultCarrySubstract when x"1",
-                     resultCarryIncrement when x"2",
-                     resultCarryDecrement when x"3",
-                     resultCarryAddCarry when x"4",
-                     resultCarrySubtractCarry when x"5",
-                     resultCarryRotateRight when x"A",
-                     resultCarryRotateLeft when x"B",
-                     resultCarryRotateRightCarry when x"C",
-                     resultCarryRotateLeftCarry when x"D",
-                     resultCarryMultiplication when x"F",
+								resultCarryAddCarry when x"1",
+								resultCarrySubstract when x"2",
+								resultCarrySubtractCarry when x"3",
+								resultCarryMultiplication when x"4",
+								resultCarryIncrement when x"5",
+								resultCarryDecrement when x"6",
+								resultCarryRotateRight when x"B",
+								resultCarryRotateRightCarry when x"C",
+								resultCarryRotateLeft when x"D",
+								resultCarryRotateLeftCarry when x"E", 
                      '0' when others;            
 
 end Behavioral;
