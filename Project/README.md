@@ -34,7 +34,7 @@ ALU jednotka vykonáva základné logické, aritmetické operácie a iné operá
 ### Jednotlivé funkčnú jednotky
 
 
-##Simulácia
+## Simulácia
 
 ## Použité zdroje
 https://www.xilinx.com/support/documentation/boards_and_kits/ug501.pdf <br>
