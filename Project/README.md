@@ -4,7 +4,7 @@
 Vlastní ALU (Arithmetic Logic Unit) jednotka. Možnost výběru instrukcí a vstupních hodnot za chodu aplikace. Výstup na 7segmentovém displeji.
 
 ## Základné informácie
-ALU jednotka vykonáva základné logické, aritmetické operácie a iné operácie s bitmi. Vytvorili sme 4-bitovú jednotku, ktorá vie teda previesť 16 rôznych operácií (bližšie v tabuľke v sekcii "Funkcie").
+ALU jednotka vykonáva základné logické, aritmetické operácie a iné operácie s bitmi. Vytvorili sme 4-bitovú jednotku, ktorá vie teda previesť 16 rôznych operácií (bližšie v tabuľke v sekcii "Funkcie"). Vstup a výstup sú riadené jednotkou CoolRunner-II CPLD a rozširujúcou CPLD doskou.
 
 ## Funkcie
 *A a B považujeme za vstupy, Y za výstup, C za prenosový bit*
@@ -37,27 +37,43 @@ ALU jednotka vykonáva základné logické, aritmetické operácie a iné operá
 ### Jednotlivé funkčnú jednotky
 
 #### Súčet
+##### Numericky sčíta hodnoty A a B na vstupe, neberie ohľad na carry bit.
 ![súčet](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/scitanie.PNG)
 #### Súčet s prenosom
+##### Numericky sčíta hodnoty na vstupe, s ohľadom na carry bit. <br>
 ![súčet s carry](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/scitanie%2Bcarry.PNG)
 #### Rozdiel
+##### Numericky odčíta hodnoty so vstupu, bez zahrnutia prípadných carry bitov. <br>
 ![rozdiel](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/odcitanie.PNG)
 #### Rozdiel s prenosom
+##### Nemericky odčíta hodnoty so vstupu, prípadný carry bit zahrnie. <br>
 ![rozdiel s prenosom](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/odcitanie%2Bcarry.PNG)
 #### Súčin
+##### Vynásobí hodnoty na vstupe. <br>
 ![násobenie](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/nasobenie.PNG)
 #### Inkrementácia
+##### Zvýši hodnotu A zo vstupu o 1. <br>
 ![inkrement](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/increment.PNG)
 #### Dekrementácia
+##### Zníži hodnotu A zo vstupu o 1. <br>
 ![dekrement](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/dekrement.PNG)
 #### Logický súčin
+##### Prevedie funkciu AND medzi hodnotami, ktoré sú privedené a vstup ALU. <br>
 ![and](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/and.PNG)
 #### Logický súčet
+##### Prevedie logický OR s hodnotami na vstupe. <br>
 ![or](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/or.PNG)
 #### Exkluzivní logický súčet
+##### Prevedie funkciu XOR s hodnotami na vstupe. <br>
 ![xor](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/xor.PNG)
 #### Logická negácia
+##### Zneguju hodnotu A privedenú na vstup. 
 ![negácia](https://github.com/akostelanska/Digital-electronics-1/blob/master/Project/Images/negacia.PNG)
+#### Rotácia vpravo
+##### Prevedie rotáciu hodnoty A na vstupe o 1 bit doprava. 
+#### Rotácia vľavo
+##### Prevedie rotáciu hodnoty A na vstupe o 1 bit doľava.
+
 
 ## Simulácia
 Simulácia pre sčítačku <br>
