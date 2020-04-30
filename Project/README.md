@@ -4,7 +4,7 @@
 Vlastní ALU (Arithmetic Logic Unit) jednotka. Možnost výběru instrukcí a vstupních hodnot za chodu aplikace. Výstup na 7segmentovém displeji.
 
 ## Základné informácie
-ALU jednotka vykonáva základné logické, aritmetické operácie a iné operácie s bitmi. Vytvorili sme 4-bitovú jednotku, ktorá vie teda previesť 16 rôznych operácií (bližšie v tabuľke v sekcii "Funkcie"). Vstup a výstup sú riadené jednotkou CoolRunner-II CPLD a rozširujúcou CPLD doskou.
+ALU jednotka vykonáva základné logické, aritmetické operácie a iné operácie s bitmi. Vytvorili sme 4-bitovú jednotku, ktorá vie teda previesť 16 rôznych operácií (bližšie v tabuľke v sekcii "Funkcie"). Vstup a výstup sú riadené doskou CoolRunner-II CPLD a rozširujúcou CPLD doskou. Projekt nebol kvôly krízovej situácií otestovaný na fyzickej jednotke.
 
 ## Funkcie
 *A a B považujeme za vstupy, Y za výstup, C za prenosový bit*
